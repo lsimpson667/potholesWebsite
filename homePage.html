@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potholes</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>   
+<body>
+    <div class ="main-container">
+        <nav>
+            <div class ="nav-buttons-container">
+                <div class ="home-button-container">
+                    <button id ="home-button" type="button" onclick="window.location.href = './homePage.html'">Home</button>
+                </div>
+                <div class="right-side-buttons-container">
+                    <button id="add-new-button" type="button" onclick="window.location.href = './addNewPothole.html'">Add new</button>
+                
+                    <button id ="map-buttons"type="button" onclick="window.location.href = './mapPage.html'">Map</button>
+                </div>
+            </div>
+        </nav>
+        <div class ="content-container">
+
+            <div class ="headding-container">
+                <h1>My Potholes Website</h1>
+            </div>
+            <div class ="home-description-container">
+                <p>
+                    I designed this website to document some of my favorite potholes around <br>Boston. Below you can see my three favorite potholes. To see a map of all <br>the potholes, click "Map" in the navigation bar. To add your own favorite <br>potholes, click "Add new."
+                </p>
+            </div>
+            <div class ="home-articles-container">
+                <div class ="string-of-pearls-container">
+                    <p id ="subheadding">String of Pearls</p>
+                    <div class ="string-of-pearls-picture-container">
+                        <img src ="./images/pothole1.jpg" alt ="5 potholes lined up in a row">
+                    </div>
+                </div>            
+                <div class="fractal-pothole-container">
+                    <p id ="subheadding">Fractal Pothole</p>
+                    <div class ="fractal-pothole-picture-container">
+                        <img src ="./images/pothole2.jpg" alt ="pothole with many cracks around it">
+                    </div>
+                </div>    
+                <div class =salt-and-sands-container>
+                    <p id ="subheadding">Salt and Sand</p>
+                    <div class ="salt-and-sands-picture-container">
+                        <img src ="./images/pothole3.jpg" alt ="sandy pothole">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./scripts/script.js"></script>
+</body>
+</html>

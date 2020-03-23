@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potholes</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+<body>
+    <div class ="main-container">
+        <nav>
+            <div class ="nav-buttons-container">
+                <div class ="home-button-container">
+                    <button id ="home-button" type="button" onclick="window.location.href = './homePage.html'">Home</button>
+                </div>
+                <div class="right-side-buttons-container">
+                    <button id="add-new-button" type="button" onclick="window.location.href = './addNewPothole.html'">Add new</button>
+                
+                    <button id ="map-buttons"type="button" onclick="window.location.href = './mapPage.html'">Map</button>
+                </div>
+            </div>
+        </nav>
+        <div class="content-container">
+            <div class="headding-container">
+                <h1>Add a New pothole</h1>
+            </div>
+            <div class ="instructions-container">
+                <p>
+                    To add a new pothole, you must <button type="button" onclick="showUsernameMessage()">Log in</button> first.
+                </p>
+            </div>
+            <div class ="add-pothole-btn-container">
+                <button type="button" onclick="addNewPothole()">Add new pothole</button>
+                <p id="addNewPothole" ></p>
+            </div>
+        </div> 
+    </div>    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
