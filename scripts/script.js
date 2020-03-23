@@ -17,17 +17,19 @@ function showUsernameMessage() {
 
 let password;
 // Ask Kiki or Melissa questions about why the Line Break doesnt workVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+let txt2 = `Thanks! I'll add that to the list`;
 function addNewPothole() {
     
     let newPothole = prompt(`What is the name of your new pothole?`);
 
     let txt;
-    let txt2 = `${newPothole}`;
+    txt2 += `<p>${newPothole}<p>`;
 
-    if (newPothole === "" || newPothole === undefined) {
+    if (newPothole === "" || newPothole === undefined || newPothole === null) {
         txt = "Cancelled";
     } else {
-        txt = `Thanks! I'll add that to the list.\n ${txt2}`; 
+        document.getElementById("addNewPothole").innerHTML = txt2;
     }
-    document.getElementById("addNewPothole").innerHTML = txt;
+    // document.getElementById("addNewPothole").innerHTML = txt2;
 }
